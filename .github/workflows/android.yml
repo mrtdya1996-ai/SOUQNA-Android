@@ -33,6 +33,7 @@ jobs:
         run: |
           cd project
           npm install --legacy-peer-deps
+          npm run build
           npx cap sync android
           cd android
           chmod +x gradlew
